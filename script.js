@@ -1,12 +1,12 @@
 // ==========================================================================
-// FreshRoot Farms - interactions
+// FreshRoot Farms — interactions
 // ==========================================================================
 
 const WHATSAPP_NUMBER = '919217468925'; // TODO: replace with your live number
 
 // Paste the "Web app" URL you get from deploying the Apps Script (see the
 // referral-logger.gs file that came with this site) between the quotes below.
-// Leave it as-is and visit-logging is simply skipped - nothing else breaks.
+// Leave it as-is and visit-logging is simply skipped — nothing else breaks.
 const SHEET_LOGGER_URL = 'https://script.google.com/macros/s/AKfycbzp1Bif78U9v1Po2QgMhrcKArn_EO7uvRjkFGvz9mkz57RtRQ-6hgbHba3OwU4FWWqP7Q/exec';
 
 // --------------------------------------------------------------------------
@@ -30,7 +30,7 @@ function logReferralVisit(code) {
     fetch(url, { mode: 'no-cors' })
         .then(() => sessionStorage.setItem(sessionKey, '1'))
         .catch(() => {
-            /* silent - a failed log should never block the visitor's experience */
+            /* silent — a failed log should never block the visitor's experience */
         });
 }
 
@@ -38,18 +38,7 @@ function initReferralBadge() {
     const code = getReferralCode();
     const badge = document.getElementById('referralBadge');
     const codeEl = document.getElementById('referralCode');
-    if (code && badge && codeEl) {
-        codeEl.textContent = code;
-        badge.classList.add('active');
-    }
-    logReferralVisit(code);
-    return code;
-
-    function initReferralBadge() {
-    const code = getReferralCode();
-    const badge = document.getElementById('referralBadge');
-    const codeEl = document.getElementById('referralCode');
-    const heroCodeEl = document.getElementById('heroRefCode'); // add this
+    const heroCodeEl = document.getElementById('heroRefCode');
 
     if (code && badge && codeEl) {
         codeEl.textContent = code;
@@ -57,12 +46,11 @@ function initReferralBadge() {
     }
 
     if (heroCodeEl && code) {
-        heroCodeEl.textContent = code; // add this: overwrite VK001 with the real code
+        heroCodeEl.textContent = code;
     }
 
     logReferralVisit(code);
     return code;
-}
 }
 
 function buildWhatsAppUrl(refCode) {
