@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshRoot Farms - From Root to Table</title>
+    <meta name="description" content="Premium organic produce and kitchen garden services, delivered fresh. Grow your own healthy, chemical-free food at home with FreshRoot Farms.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+</head>
+<body>
+
+    <!-- Growth line: signature scroll element (desktop only) -->
+    <svg class="growth-line" viewBox="0 0 40 2000" preserveAspectRatio="none" aria-hidden="true">
+        <path class="growth-line__track" d="M20 0 V2000" />
+        <path class="growth-line__fill" id="growthFill" d="M20 0 V2000" />
+    </svg>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="#top" class="logo-container">
+                <img src="assets/logo.png" alt="FreshRoot Farms" class="logo-img">
+                <span class="logo-text">FreshRoot Farms</span>
+            </a>
+            <nav class="nav">
+                <a href="#services">Services</a>
+                <a href="#gallery">Harvest</a>
+            </nav>
+            <button class="btn-nav-cta" data-whatsapp>
+                Chat on WhatsApp
+            </button>
+        </div>
+    </header>
+
+    <!-- Referral Code Badge -->
+    <div id="referralBadge" class="referral-badge">
+        <span class="referral-badge__label">Referred by</span>
+        <span class="referral-code" id="referralCode"></span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="top">
+        <div class="hero-media">
+            <img src="https://images.unsplash.com/photo-1518843875459-f738682238a6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwzfHxmcmVzaCUyMGluZ3JlZGllbnRzfGVufDB8fHx8MTc3MTUxMTkwNHww&ixlib=rb-4.1.0&q=85" alt="Fresh organic produce laid out at harvest">
+            <div class="hero-scrim"></div>
+        </div>
+
+        <div class="hero-content">
+            <p class="eyebrow"><span class="eyebrow__dot"></span>Exclusive access - invite only</p>
+            <h1 class="hero-title">
+                Everything good <em>starts</em><br> at the root.
+            </h1>
+            <p class="hero-subtitle">
+                Experience the freshness of Soil to Soul with naturally grown, chemical-free vegetables.
+                Apply code <strong id="heroRefCode">VK001</strong> to <i><b>claim 1 FREE Trial Basket</b></i> for Quality Check + Flat 20% OFF on any Soil to Soul Membership.</p>
+            <div class="hero-actions">
+                <button class="btn-primary" data-whatsapp data-ref-context>
+                    <svg class="icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    Unlock on WhatsApp
+                </button>
+                <a href="#services" class="btn-ghost">See what we grow ↓</a>
+            </div>
+        </div>
+
+        <div class="hero-sprout" aria-hidden="true">
+            <svg viewBox="0 0 200 220" fill="none">
+                <path class="sprout-path sprout-path--1" d="M100 210 V120" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+                <path class="sprout-path sprout-path--2" d="M100 130 C 60 130, 40 100, 45 60 C 90 55, 110 90, 100 130 Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+                <path class="sprout-path sprout-path--3" d="M100 110 C 130 100, 150 65, 150 30 C 105 30, 85 70, 100 110 Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+                <path class="sprout-path sprout-path--4" d="M100 210 C 70 200, 55 205, 40 220 M100 210 C 130 200, 145 205, 160 220 M100 210 V 220" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services / Brochure Section -->
+    <section class="section" id="services">
+        <div class="section-head">
+            <p class="section-eyebrow">01 - What we grow</p>
+            <h2 class="section-title">Two ways to eat better</h2>
+            <p class="section-subtitle">From our soil to your fork, or straight into a bed in your backyard - either way, it starts with a seed and a plan.</p>
+        </div>
+
+        <div class="service-grid">
+            <article class="service-card">
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 48 48" fill="none">
+                        <path d="M24 6 C10 10 8 24 8 30 C8 38 15 42 24 42 C33 42 40 38 40 30 C40 24 38 10 24 6Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M24 42 V20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M24 26 C18 26 15 22 15 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M24 22 C30 22 33 18 33 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="service-card__title">Soil to Fork</h3>
+                <p class="service-card__desc">Pure, seasonal organic produce, harvested at peak ripeness and delivered fresh - no middlemen, no chemicals, no compromise.</p>
+                <ul class="service-card__facts">
+                    <li>Weekly harvest boxes</li>
+                    <li>Zero synthetic pesticides</li>
+                    <li>Farm-verified sourcing</li>
+                </ul>
+                <button class="btn-secondary" data-catalog="https://1drv.ms/b/c/c26e11d9fac7d7de/IQAIJVH5erW_RI_zCm963nVFASPQ3HPz2LePAL45JhEd57Y?e=l6xeaD">
+                    View Catalog
+                </button>
+            </article>
+
+            <article class="service-card">
+                <div class="service-card__icon">
+                    <svg viewBox="0 0 48 48" fill="none">
+                        <path d="M24 40 V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M24 22 C15 22 12 14 12 8 C22 8 26 15 24 22Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M24 18 C33 18 36 10 36 5 C26 5 22 12 24 18Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M24 40 C17 40 12 40 8 36 M24 40 C31 40 36 40 40 36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="service-card__title">Kitchen Garden</h3>
+                <p class="service-card__desc">We design, build, and maintain a working garden in your own space - raised beds, soil mix, seedlings, and a season-long care plan.</p>
+                <ul class="service-card__facts">
+                    <li>Custom bed design & install</li>
+                    <li>Seedling + soil sourcing</li>
+                    <li>Ongoing care visits</li>
+                </ul>
+                <button class="btn-secondary" data-catalog="https://1drv.ms/b/c/c26e11d9fac7d7de/IQCX9vg8vMUET4UkuhOTmug4AStOiZgdkGRoqQ1MtSFczNI?e=rEf5IV">
+                    View Catalog
+                </button>
+            </article>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section section--sage" id="gallery">
+        <div class="section-head">
+            <p class="section-eyebrow">02 - The harvest</p>
+            <h2 class="section-title">Farm to table, in pictures</h2>
+            <p class="section-subtitle">A look at what leaves the field this week.</p>
+        </div>
+
+        <div class="gallery-filters" role="tablist" aria-label="Filter gallery">
+            <button class="filter-chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter-chip" data-filter="produce" role="tab" aria-selected="false">Produce</button>
+            <button class="filter-chip" data-filter="garden" role="tab" aria-selected="false">Handpicked</button>
+            <button class="filter-chip" data-filter="harvest" role="tab" aria-selected="false">Harvest Day</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+            <figure class="gallery-item" data-category="produce">
+                <img src="assets/soiltosoul/18.jpeg" alt="A crate of freshly washed vegetables" loading="lazy">
+                <figcaption><span>Fresh Produce</span><small>Soil to Soul</small></figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="produce">
+                <img src="assets/soiltosoul/15.jpeg" alt="A crate of freshly washed vegetables" loading="lazy">
+                <figcaption><span>Fresh Produce</span><small>Soil to Soul</small></figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="produce">
+                <img src="assets/soiltosoul/14.jpeg" alt="A crate of freshly washed vegetables" loading="lazy">
+                <figcaption><span>Fresh Produce</span><small>Soil to Soul</small></figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="produce">
+                <img src="assets/soiltosoul/13.jpeg" alt="A crate of freshly washed vegetables" loading="lazy">
+                <figcaption><span>Fresh Produce</span><small>Soil to Soul</small></figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="produce">
+                <img src="assets/soiltosoul/16.jpeg" alt="Bundle of organic carrots" loading="lazy">
+                <figcaption><span>Natural Excellence</span><small>Soil to Soul</small></figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="harvest">
+                <img src="assets/soiltosoul/6.jpeg" alt="Fresh corn just harvested" loading="lazy">
+                <figcaption><span>Seasonal Harvest</span><small>Harvest Day</small></figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="garden">
+                <img src="assets/soiltosoul/1.jpeg" alt="Raised bed kitchen garden with seedlings" loading="lazy">
+                <figcaption><span>A Bed Getting Started</span><small>Soil to Soul</small></figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="garden">
+                <img src="assets/soiltosoul/4.jpeg" alt="Hands tending to home garden greens" loading="lazy">
+                <figcaption><span>Tended by Hand</span><small>Soil to Soul</small></figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="garden">
+                <img src="assets/soiltosoul/20.jpeg" alt="Hands tending to home garden greens" loading="lazy">
+                <figcaption><span>Tended by Hand</span><small>Soil to Soul</small></figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="harvest">
+                <img src="assets/soiltosoul/19.jpeg" alt="Basket of mixed harvested vegetables" loading="lazy">
+                <figcaption><span>Ready for Delivery</span><small>Harvest Day</small></figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="harvest">
+                <img src="assets/soiltosoul/11.jpeg" alt="Basket of mixed harvested vegetables" loading="lazy">
+                <figcaption><span>Ready for Delivery</span><small>Harvest Day</small></figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="harvest">
+                <img src="assets/soiltosoul/10.jpeg" alt="Basket of mixed harvested vegetables" loading="lazy">
+                <figcaption><span>Ready for Delivery</span><small>Harvest Day</small></figcaption>
+            </figure>
+            <figure class="gallery-item" data-category="harvest">
+                <img src="assets/soiltosoul/9.jpeg" alt="Basket of mixed harvested vegetables" loading="lazy">
+                <figcaption><span>Ready for Delivery</span><small>Harvest Day</small></figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="FreshRoot Farms" class="footer-logo-img">
+                <span class="footer-logo-text">FreshRoot Farms</span>
+            </div>
+            <p class="footer-tagline">Soil to Soul.</p>
+            <div class="footer-contact">
+                WhatsApp: <a href="#" data-whatsapp>+91 92174 68925</a>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-copyright">© 2026 FreshRoot Farms. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <button class="whatsapp-float" data-whatsapp aria-label="Chat with FreshRoot Farms on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </button>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox__close" id="lightboxClose" aria-label="Close">✕</button>
+        <img src="" alt="" id="lightboxImg">
+        <div class="lightbox__caption" id="lightboxCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
