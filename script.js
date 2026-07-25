@@ -36,6 +36,7 @@ function logReferralVisit(code) {
 
 function initReferralBadge() {
     const code = getReferralCode();
+    console.log('[FreshRoot] referral code detected from URL:', code); // remove this line once confirmed working
     const badge = document.getElementById('referralBadge');
     const codeEl = document.getElementById('referralCode');
     const heroCodeEl = document.getElementById('heroRefCode');
@@ -47,6 +48,8 @@ function initReferralBadge() {
 
     if (heroCodeEl && code) {
         heroCodeEl.textContent = code;
+    } else if (!heroCodeEl) {
+        console.warn('[FreshRoot] No element with id="heroRefCode" found in the HTML — add it to the <strong> tag around the hero code text.');
     }
 
     logReferralVisit(code);
